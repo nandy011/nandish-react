@@ -1,35 +1,11 @@
-{/* <div id="parent">
-    <div id="child1">
-        <h1></h1>
-        <h2></h2>
-    </div>
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-    <div id="child2">
-        <h1></h1>
-        <h2></h2>
-    </div>
+// JSX (transpoled before it reaches the JS) - PARCEL - BAbel
+// JSX => React.createElement => ReactElement-JS object => HTMLElement(render)
 
-</div> */}
-
-
-const heading = React.createElement("div", { id: "parent" },
-    [React.createElement("div", { id: "child1" },
-        [React.createElement("h1", { id: "heading", className: "heading1 head" }, "Hi child1 This is H1 Tag"),
-        React.createElement("h2", { id: "heading", className: "heading1 head" }, "Hi child1 This is H2 Tag")
-        ]),
-    React.createElement("div", { id: "child2" },
-        [React.createElement("h1", { id: "heading", className: "heading1 head" }, "Hi child2 This is H1 Tag"),
-        React.createElement("h2", { id: "heading", className: "heading1 head" }, "Hi child2 This is H2 Tag")
-        ]
-    )
-    ]);
-
+const eading2222 = <h1 className="head" tabIndex="3">This is reactJS</h1>
+console.log(eading2222);
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(heading)
+root.render(eading2222)
 
-
-
-// const heading = React.createElement("h1", { id: "heading", className: "heading1 head" }, "Reeeeeeeeeeeeeeeact");
-
-// const root = ReactDOM.createRoot(document.getElementById("root"))
-// root.render(heading)
