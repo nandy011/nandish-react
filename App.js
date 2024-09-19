@@ -1,11 +1,24 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// JSX (transpoled before it reaches the JS) - PARCEL - BAbel
-// JSX => React.createElement => ReactElement-JS object => HTMLElement(render)
+//Reacct Element
+// const heading = <h1 className="head" tabIndex="3">This is reactJS</h1>
 
-const eading2222 = <h1 className="head" tabIndex="3">This is reactJS</h1>
-console.log(eading2222);
+
+//React Functional Component 
+const TitleComponent = () => (
+    <h1>This is Title</h1>
+);
+
+const HeadingComponent = () => (
+    <div className="continer">
+        {/* Component composition:- inside component call another companent   */}
+        <TitleComponent /> 
+        {/*  */}
+        <h1 className="head">This Is Functional React Component</h1>
+    </div>
+);
+ 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-root.render(eading2222)
+root.render(<HeadingComponent />)
 
