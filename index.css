@@ -62,3 +62,9 @@
     padding: 0 10px;
     cursor: pointer;
 }
+
+a:-webkit-any-link {
+  color: black;
+  cursor: pointer;
+  text-decoration: auto;
+}
